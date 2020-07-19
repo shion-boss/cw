@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'portfolio/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/portfolio1.css' %}">
+  </head>
+  <body>
+    <div class="main_bg sa_t" data-sa_t_trigger='#main'></div>
+    <div class="body_grid">
+      <div class="header">
+        <input type="checkbox" name="" value="" id='header_icon'>
+        <label for="header_icon" class='un_check'><i class="fas fa-bars header_icon"></i></label>
+        <div class="header_check">
+          <div class="batu_box">
+            <label for="header_icon" class='batu'><i class="fas fa-times header_icon"></i></label>
+          </div>
+          <div class="res_h_menu">
+            <a href="#top">Top</a>
+            <a href="#main">Line</a>
+            <a href="#sub">Secret1</a>
+            <a href="#sub2">Secret2</a>
+            <a href="#last">Promise</a>
+          </div>
+        </div>
+      </div>
+      <header>
+        <div class="header_grid">
+          <p class='logo'>Mechanism</p>
+          <div class="header_menu">
+            <a href="#top">Top</a>
+            <a href="#main">Line</a>
+            <a href="#sub">Secret1</a>
+            <a href="#sub2">Secret2</a>
+            <a href="#last">Promise</a>
+          </div>
+        </div>
+      </header>
+      <div class="top sa_s" data-sa_s_trigger='#main' name='top'>
+        <img src="/static/portfolio/img/speed.jpg" alt="" class='top_img'>
+        <div class="res_top_box">
+          <img src="/static/portfolio/img/res_top.jpg" alt="" class='res_top_img'>
+        </div>
+      </div>
+      <div class="main" id='main' >
+        <p class='main_header sa sa--up'>そんな簡単に即日納品できるはずがない？</p>
+        <p class='main_a sa sa--up'>フリーランスエンジニアならではの秘策</p>
+        <div class="talk">
+          <div class="says_box sa sa--up2">
+            <div class="icon_box">
+              <img src="static/portfolio/img/speed.jpg" alt="" class='icon'>
+            </div>
+            <div class="says">
+              <p class='main_p'>この度はお仕事のご依頼ありがとうございます。</p>
+            </div>
+          </div>
+          <div class="mycomment sa sa--up2">
+            <p class='main_p'>本当に即日納品なんてできるのか？</p>
+          </div>
+          <div class="says_box sa sa--up2">
+            <div class="icon_box">
+              <img src="static/portfolio/img/speed.jpg" alt="" class='icon'>
+            </div>
+            <div class="says">
+              <p class='main_p'>出来ます！コツがあるんです！</p>
+            </div>
+          </div>
+          <div class="mycomment sa sa--up2">
+            <p class='main_p '>24時間以内に納品出来なかったらお代は支払わないぞ？</p>
+          </div>
+          <div class="says_box sa sa--up2">
+            <div class="icon_box">
+              <img src="static/portfolio/img/speed.jpg" alt="" class='icon'>
+            </div>
+            <div class="says">
+              <p class='main_p '>はい！大丈夫です！お任せください！</p>
+            </div>
+          </div>
+          <div class="mycomment sa sa--up2">
+            <p class='main_p '>ドミノピザみたいな奴だな。。<br>コツってのはどんな感じなんだい？</p>
+          </div>
+          <div class="says_box sa sa--up2">
+            <div class="icon_box">
+              <img src="static/portfolio/img/speed.jpg" alt="" class='icon'>
+            </div>
+            <div class="says">
+              <p class='main_p'>沢山あるのですが、メインの２つをご紹介します！</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub sa sa--l" id='sub'>
+        <p class='sub_header'>不可能を可能にする奇跡のドリンク<br><span>モンスターエナジー</span></p>
+        <div class="monster_box" id='monster_box'>
+          <div class="sa sa--l" data-sa_delay=400 data-sa_trigger='#monster_box'>
+            <p>集中力UP</p>
+          </div>
+          <div class="sa sa--l" data-sa_delay=200 data-sa_trigger='#monster_box'>
+            <p>持続力UP</p>
+          </div>
+          <div class="sa sa--l" data-sa_trigger='#monster_box'>
+            <p>おいしい</p>
+          </div>
+        </div>
+        <div class="monster_box" id='res_monster_box'>
+          <div class="sa sa--l" data-sa_trigger='#res_monster_box'>
+            <p>集中力UP</p>
+          </div>
+          <div class="sa sa--l" data-sa_delay=200 data-sa_trigger='#res_monster_box'>
+            <p>持続力UP</p>
+          </div>
+          <div class="sa sa--l" data-sa_delay=400 data-sa_trigger='#res_monster_box'>
+            <p>おいしい</p>
+          </div>
+        </div>
+        <p class='p_guide'>フリーランスエンジニアならではの秘訣一つ目。掛け持ちエンジニアや、一般のエンジニアの方は、時間的制約が大きい。1日に4時間ほどしか作業時間を割くことが出来ない人も多いだろう。それでは、納期が1週間～2週間後になってしまうことになる。しかし、我々フリーランスエンジニアは、24時間のうちの可能な限りをプログラミングに費やすことが可能である。それを最大限発揮させるために、モンスターエナジーが一役買っているということである。</p>
+        <p class='right_s'>一日20時間労働上等</p>
+      </div>
+      <div class="sub2 sa sa--r" id='sub2'>
+        <p class='sub_header'>効率化を超えるシンプルな努力<br><span>日々鍛錬</span></p>
+        <div class="work_box" id='work_box'>
+          <div class="sa sa--r"  data-sa_trigger='#work_box'>
+            <p>設計</p>
+          </div>
+          <div class="sa sa--r" data-sa_delay=200 data-sa_trigger='#work_box'>
+            <p>構築</p>
+          </div>
+          <div class="sa sa--r" data-sa_delay=400 data-sa_trigger='#work_box'>
+            <p>改善</p>
+          </div>
+        </div>
+        <p class='p_guide'>設計、構築、改善を最速で繰り返す。効率化はその過程で生まれる。毎日新しい技術を探すところから始まり、その技術を使ってデザインを考える。頭の中でデザインが出来上がったら、コーディングして確認。最後に改善や修正を行う。このシンプルな作業を毎日繰り返す。知っているだけでは、到底辿り付けないスピードへ。</p>
+        <p class='left_s'>継続こそ力</p>
+      </div>
+      <div class="last sa" id='last' data-sa_trigger='#header_p'>
+        <div class="concept">
+          <p class='header_p sa' id='header_p'>即日納品六つのお約束</p>
+          <p class='sa sa--rl' data-sa_delay=200>一、打ち合わせ後から二十四時間以内に納品します</p>
+          <p class='sa sa--rl' data-sa_delay=300>二、五ページを最大限度枚数とします</p>
+          <p class='sa sa--rl' data-sa_delay=400>三、作品がお気に召さなかった際や<br>　　二十四時間以内に納品出来なかった際はお代を頂戴致しません</p>
+          <p class='sa sa--rl' data-sa_delay=500>四、仮に二十四時間を過ぎてしまっても最後まで作成致します</p>
+          <p class='sa sa--rl' data-sa_delay=600>五、納品後一週間は画像、文字、色の変更は無料で承ります</p>
+          <p class='sa sa--rl' data-sa_delay=700>六、私の不手際による不具合は何度でも修正致します</p>
+        </div>
+      </div>
+      <footer>
+        <p>「即日納品の秘訣」<br class='res_br'>お楽しみ頂けましたでしょうか。</p>
+        <p>通常のプランもご用意していますので、<br class='res_br'>お気軽にお問い合わせください。</p>
+        <p class='footer_cp'>@Shion Ohtsuki</p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'portfolio/js/scroll.js' %}"></script>
+    <script src="{% static 'portfolio/js/portfolio1.js' %}"></script>
+  </body>
+</html>

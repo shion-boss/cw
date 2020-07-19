@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'portfolio/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/portfolio2.css' %}">
+  </head>
+  <body>
+    <div class="body_grid">
+      <header>
+        <img class="logo" src="static/portfolio/img/shion_logo.jpg" alt="">
+      </header>
+      <div class="top">
+        <div id="stalker">
+          <span></span>
+          <p id='txt1'>0</p>
+          <p id='txt2'>0</p>
+        </div>
+        <div class="circle" id='circle'></div>
+      </div>
+      <div class="dl_p main sa" data-sa_trigger='#main_margin'>
+        <div class="m_in_border">
+          <div class="profile">
+            <div class="profile_info">
+              <p class="profile_name">大槻詞音<br><span>-Shion Ohtsuki-</span></p>
+              <p>HTML ★★★★★</p>
+              <p>CSS ★★★★★</p>
+              <p>javascript ★★★★★</p>
+              <p>PHP ★★★</p>
+              <p>Python ★★★★</p>
+              <p class="profile_text">日本体育大学に入学後、ボクシング部に入部しようと思っていたのですが、その年から推薦入学の学生のみ入部できる方針に変更したようで、一般受験で日体大に入学した僕は、ボクシングに入部させてもらえなかったので、すぐに大学を退学しました。その後、高校の時の友達の誘いで、プログラミングに触れる機会があり、僕はその時から「無から有を創り出す」プログラミングの魅力に引き込まれていきました。それからの毎日は遊びと仕事が完全に一体化し、目が覚めてから力尽きるまで黙々とプログラミングをする日々になりました。webサイトを製作する際のこだわりは、紹介するコンテンツの魅力を最大限引き出し、ユーザーとコミュニケーションを取れる形にすることです。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_margin" id='main_margin'>
+
+      </div>
+      <div class="d_lp sub1 sa" id='sub1'>
+
+      </div>
+      <div class="d_lp sub2">
+
+      </div>
+      <div class="d_lp news sa">
+        <a class="twitter-timeline" id='twitter' data-theme="dark" data-chrome="noheader nofooter" href="https://twitter.com/on_c_engineer?ref_src=twsrc%5Etfw">Tweets by on_c_engineer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="d_lp main2">
+
+      </div>
+      <div class="d_lp last">
+
+      </div>
+      <footer class='d_lp'>
+
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'portfolio/js/scroll.js' %}"></script>
+    <script src="{% static 'portfolio/js/portfolio2.js' %}"></script>
+  </body>
+</html>

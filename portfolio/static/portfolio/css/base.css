@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-align: center;
+  text-decoration: none;
+}
+.img_box{
+  overflow-x: hidden;
+}
+
+.sa{
+  transition: 0.6s;
+  opacity: 0;
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa--up {
+  transform: translateY(100px);
+}
+
+.sa--up2 {
+  transform: translateY(120px);
+}
+
+.sa--rl{
+  transform: translateX(50px);
+}
+
+.sa--r{
+  transform: translateX(100%);
+}
+
+.sa--l{
+  transform: translateX(-100%);
+}
