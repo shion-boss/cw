@@ -73,3 +73,42 @@ document.getElementById("circle").onclick = function() {
   //var y = document.documentElement.clientHeight
   //twitter.setAttribute('data-height', y);
 //};
+
+
+var scrollAnimationClass3 = 'sa_s';
+var scrollAnimationShowClass3 = 'fadeout';
+var triggerMarginDefault3 = 300;
+
+var scrollAnimationElm3 = document.querySelectorAll('.' + scrollAnimationClass3);
+var scrollAnimationFunc3 = function() {
+  var dataMargin3 = scrollAnimationClass3 + '_margin';
+  var dataTrigger3 = scrollAnimationClass3 + '_trigger';
+  var dataDelay3 = scrollAnimationClass3 + '_delay';
+  for(var i = 0; i < scrollAnimationElm3.length; i++) {
+    var triggerMargin3 = triggerMarginDefault3;
+    var elm3 = scrollAnimationElm3[i];
+    var showPos3 = 0;
+    if(elm3.dataset[dataMargin3] != null) {
+      triggerMargin3 = parseInt(elm3.dataset[dataMargin3]);
+    }
+    if(elm3.dataset[dataTrigger3]) {
+      showPos3 = document.querySelector(elm3.dataset[dataTrigger3]).getBoundingClientRect().top + triggerMargin3;
+    } else {
+      showPos3 = elm3.getBoundingClientRect().top + triggerMargin3;
+    }
+    if (window.innerHeight > showPos3) {
+      var delay3 = (elm3.dataset[dataDelay3])? elm3.dataset[dataDelay3] : 0;
+      setTimeout(function(index3) {
+        scrollAnimationElm3[index3].classList.add(scrollAnimationShowClass3);
+      }.bind(null, i), delay3);
+    }else{
+      var delay3 = (elm3.dataset[dataDelay3])? elm3.dataset[dataDelay3] : 0;
+      setTimeout(function(index3) {
+        scrollAnimationElm3[index3].classList.remove(scrollAnimationShowClass3);
+      }.bind(null, i), delay3);
+    }
+  }
+}
+
+window.addEventListener('load', scrollAnimationFunc3);
+window.addEventListener('scroll', scrollAnimationFunc3);

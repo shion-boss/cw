@@ -19,8 +19,15 @@
   border-radius: 10px;
   box-shadow: 0 0 15px 5px rgb(255, 56, 253);
 }
+.fadeout{
+  opacity: 0 !important;
+  transform: translateY(-100px);
+}
+
+
 
 .body_grid{
+  background-color: black;
   font-family: 'Sawarabi Mincho', sans-serif;
   display: grid;
   grid-template-columns: 200px 1fr 1fr 1fr;
@@ -191,6 +198,7 @@ header{
 }
 
 .main_margin{
+  top: 0;
   grid-area: main;
   height: 100vh;
   padding: 1rem;
